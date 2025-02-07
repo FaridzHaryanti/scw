@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.8rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -127,7 +127,7 @@ ul.social-links li a i {
 
 .overlay-primary:before {
   content: '';
-  background: rgba(255, 102, 0, 0.93);
+  background: #80D2E7;
   position: absolute;
   top: 0;
   left: 0;
@@ -137,7 +137,7 @@ ul.social-links li a i {
 
 .overlay-dark:before {
   content: '';
-  background: -webkit-linear-gradient(-45deg, #1e5799 0%, #1d1546 0%, #1a0b25 100%, #207cca 100%);
+  background: -webkit-linear-gradient(-45deg, #1e5799 0%, #680656 0%, #3a2ea8 100%, #207cca 100%);
   opacity: .75;
   position: absolute;
   top: 0;
@@ -194,7 +194,7 @@ button:hover {
 }
 
 .bg-blue {
-  background: #ff6600;
+  background: #2985AC;
 }
 
 .bg-banner-one {
@@ -221,9 +221,41 @@ button:hover {
 }
 
 .bg-timer {
-  background: url(../images/background/timer-bg.jpg) no-repeat;
+  position: relative; /* Tambahkan ini */
+  background: url(../images/landing.png) no-repeat;
   background-size: cover;
   background-position: center center;
+  overflow: hidden; /* Hindari overflow efek bercahaya */
+  width: 100%;
+  height: 100vh; /* Atur tinggi sesuai kebutuhan */
+}  
+
+.bg-timer iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 177.78vh; /* 100vh * (16/9) agar penuh */
+  height: 100vh;
+  transform: translate(-50%, -50%);
 }
 
 .bg-schedule {
@@ -288,7 +320,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.section-title.white h3, .section-title.white p {
+.section-title.white h1, .section-title.white p {
   color: #fff;
 }
 
@@ -458,7 +490,7 @@ select.form-control:not([size]):not([multiple]) {
 .btn-main {
   padding: 25px 45px;
   border-radius: 3px;
-  background: #ff6600;
+  background: #874C9E;
   color: #fff;
   outline: none;
 }
@@ -475,7 +507,7 @@ select.form-control:not([size]):not([multiple]) {
 .btn-main-md {
   padding: 15px 40px;
   border-radius: 0;
-  background: #ff6600;
+  background: #4FBED2;
   color: #fff;
   outline: none;
   font-size: 0.9375rem;
@@ -483,7 +515,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .btn-main-md:hover {
   color: #fff;
-  background: #e65c00;
+  background: #1E9FB5;
 }
 
 .btn-main-md:focus {
@@ -502,15 +534,15 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .btn-transparent-md:hover {
-  background: #ff6600;
-  border-color: #ff6600;
+  background: #1E9FB5;
+  border-color: #1E9FB5;
   color: #fff;
 }
 
 .btn-main-sm {
   padding: 15px 35px;
   border-radius: 3px;
-  background: #ff6600;
+  background: #874C9E;
   color: #fff;
   outline: none;
   font-size: 14px;
@@ -533,7 +565,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .btn-white-md:hover {
-  background: #ff6600;
+  background: #4FBED2;
   color: #fff;
 }
 
@@ -598,7 +630,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .main-nav .navbar-nav .nav-item.active .nav-link {
-  color: #ff6600;
+  color: #874C9E;
 }
 
 .main-nav .dropdown-slide {
@@ -615,7 +647,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .main-nav .dropdown-slide:hover .dropdown-menu {
-  border-top: 3px solid #ff6600;
+  border-top: 3px solid #1E9FB5;
   display: none;
   opacity: 1;
   display: block;
@@ -683,9 +715,9 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .main-nav .ticket {
-  background: #ff6600;
+  background: linear-gradient(135deg, #ff3535 0%, #9d0000 100%);
   display: block;
-  padding: 34px 32px;
+  padding: 25px 32px;
 }
 
 @media (max-width: 1024px) {
@@ -760,7 +792,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-main {
-  background: #272735;
+  background: -webkit-linear-gradient(-45deg, #1e5799 0%, #680656 0%, #3a2ea8 100%, #207cca 100%);
   padding: 90px 0;
 }
 
@@ -803,7 +835,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .subfooter {
-  background: #2a2a37;
+  background: #ffffff;
   padding: 18px 0;
 }
 
@@ -812,7 +844,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .subfooter .copyright-text p a {
-  color: #ff6600;
+  color: #1E9FB5;
 }
 
 @media (max-width: 480px) {
@@ -822,12 +854,21 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .subfooter .to-top {
-  display: block;
+  position: fixed; /* Membuatnya tetap melayang */
+  bottom: 50px; /* Jarak dari bawah */
+  right: 50px; /* Jarak dari kanan */
   height: 45px;
   width: 45px;
   text-align: center;
-  background: #ff6600;
-  float: right;
+  background: #1E9FB5;
+  border-radius: 50%; /* Membuatnya bulat */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+  z-index: 1000; /* Pastikan tombol muncul di atas elemen lain */
+  cursor: pointer;
+}
+
+.subfooter .to-top:hover {
+  background: #0d7a8e; /* Warna lebih gelap saat hover */
 }
 
 .subfooter .to-top i {
@@ -838,9 +879,15 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 480px) {
   .subfooter .to-top {
-    float: none;
-    margin: auto;
-    margin-top: 30px;
+    bottom: 15px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+
+  .subfooter .to-top i {
+    font-size: 1.2rem;
   }
 }
 
@@ -1040,7 +1087,7 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 767px) {
   .about .image-block {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: center;
   }
 }
@@ -1074,7 +1121,7 @@ select.form-control:not([size]):not([multiple]) {
   content: "";
   width: 60px;
   height: 3px;
-  background: #ff6600;
+  background: #1E9FB5;
   display: block;
   margin-top: 10px;
 }
@@ -1226,7 +1273,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .speakers .speaker-item .content h5 a:hover {
-  color: #ff6600;
+  color: #1E9FB5;;
 }
 
 .speakers .speaker-item .content p {
@@ -1259,7 +1306,7 @@ select.form-control:not([size]):not([multiple]) {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: #ff6600;
+  color: #1E9FB5;
   font-weight: 500;
   display: block;
   border-radius: 0;
@@ -1277,7 +1324,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .schedule .schedule-tab ul li.nav-item a.active {
-  background: #ff6600;
+  background: #1E9FB5;
   color: #fff;
   position: relative;
 }
@@ -1295,7 +1342,7 @@ select.form-control:not([size]):not([multiple]) {
   height: 0;
   border-style: solid;
   border-width: 0 20px 20px 0;
-  border-color: transparent #ff6600 transparent transparent;
+  border-color: transparent #1E9FB5;
 }
 
 @media (max-width: 767px) {
@@ -1306,8 +1353,8 @@ select.form-control:not([size]):not([multiple]) {
 
 .schedule .schedule-contents {
   margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 30px;
+  margin-bottom: 5px;
+  padding: 10x;
 }
 
 .schedule .schedule-contents .schedule-item ul {
@@ -1384,7 +1431,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .schedule .schedule-contents .schedule-item li.headings {
   padding: 22px 40px;
-  background: #ff6600;
+  background: #1E9FB5;
 }
 
 .schedule .schedule-contents .schedule-item li.headings div {
@@ -1443,7 +1490,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .schedule .schedule-contents .schedule-item li.schedule-details .block:hover span.name {
-  color: #ff6600;
+  color: #1E9FB5;
 }
 
 .schedule .download-button {
@@ -1501,7 +1548,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .schedule.two .schedule-tab ul li.nav-item a.active {
-  background: #ff6600;
+  background: #1E9FB5;
   color: #fff;
   position: relative;
 }
@@ -1523,7 +1570,7 @@ select.form-control:not([size]):not([multiple]) {
   height: 0;
   border-style: solid;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #ff6600;
+  border-color: transparent transparent transparent #1E9FB5;bg
 }
 
 @media (max-width: 991px) {
@@ -1610,7 +1657,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .schedule.two .schedule-contents .schedule-item li.headings {
   padding: 25px 0;
-  background: #ff6600;
+  background: #1E9FB5;
 }
 
 .schedule.two .schedule-contents .schedule-item li.headings div {
@@ -1677,7 +1724,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .schedule.two .schedule-contents .schedule-item li.schedule-details .block:hover span.name {
-  color: #ff6600;
+  color: #1E9FB5;
 }
 
 .ticket-feature {
@@ -1879,7 +1926,14 @@ select.form-control:not([size]):not([multiple]) {
 
 .pricing .pricing-item {
   border: 1px solid #e5e5e5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Menambahkan transisi untuk scaling, box-shadow, dan background-color */
 }
+
+.pricing .pricing-item:hover {
+  transform: scale(1.1); /* Membesarkan elemen 10% saat hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan saat hover */
+}
+
 
 @media (max-width: 991px) {
   .pricing .pricing-item {
@@ -1889,29 +1943,37 @@ select.form-control:not([size]):not([multiple]) {
 
 .pricing .pricing-item .pricing-heading {
   padding: 20px 40px 30px 40px;
-  background: #fafafa;
-  border-bottom: 1px solid #e5e5e5;
+  background: -webkit-linear-gradient(-45deg, #7750A9 0%, #663398 30%, #7750A9 70%, #663398 100%);
+  border-bottom: 5px solid #663398;
 }
 
 .pricing .pricing-item .pricing-heading .title h6 {
   text-transform: uppercase;
   font-weight: 400;
   line-height: 50px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  color:white; 
 }
 
 .pricing .pricing-item .pricing-heading .price {
   margin-top: 28px;
+  color:white;
+}
+
+.pricing .pricing-item .pricing-heading .price p {
+  color:white;
 }
 
 .pricing .pricing-item .pricing-heading .price h2 {
   font-size: 3.625rem;
   font-weight: 400;
   margin-bottom: 0px;
+  color:white;
 }
 
 .pricing .pricing-item .pricing-heading .price h2 span {
   font-size: 1.5625rem;
+  color:white;
 }
 
 .pricing .pricing-item .pricing-body {
@@ -1927,7 +1989,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .pricing .pricing-item .pricing-body ul.feature-list li p span.available {
-  color: #ff6600;
+  color: #1E9FB5;
 }
 
 .pricing .pricing-item .pricing-body ul.feature-list li p span.unavailable {
@@ -2033,7 +2095,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .sponsors .sponsor-title h5 {
-  color: #ff6600;
+  color: #1E9FB5;
 }
 
 .sponsors .block {
@@ -2080,8 +2142,8 @@ select.form-control:not([size]):not([multiple]) {
   position: absolute;
   padding: 45px 50px 50px 50px;
   top: 80px;
-  left: 10%;
-  background: #ff6600;
+  left: 70%;
+  background: #1E9FB5;
 }
 
 @media (max-width: 480px) {
@@ -2090,7 +2152,7 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 
-.map .address-block h4, .map .address-block li {
+.map .address-block h4, .map .address-block h7, .map .address-block li {
   color: #fff;
   margin-bottom: 20px;
 }
@@ -2115,6 +2177,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .map .address-block a {
   margin-top: 35px;
+  color: white;
 }
 
 .map.new {
@@ -2502,7 +2565,7 @@ select.form-control:not([size]):not([multiple]) {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ff6600;
+  background: #1E9FB5;
   opacity: .85;
   transition: .3s ease;
 }
@@ -2599,11 +2662,11 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .controls .control:hover {
-  color: #ff6600;
+  color: #80D2E7;
 }
 
 .mixitup-control-active {
-  color: #ff6600;
+  color: #80D2E7;
 }
 
 /* Container
@@ -2792,7 +2855,7 @@ select.form-control:not([size]):not([multiple]) {
   width: 65px;
   height: 65px;
   text-align: center;
-  background: #ff6600;
+  background: #1E9FB5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3234,7 +3297,7 @@ ul.pagination .active a {
   left: 0;
   top: 37px;
   content: "";
-  background: #ff6600;
+  background: #1E9FB5;
   width: 30px;
   height: 2px;
 }
@@ -3248,7 +3311,7 @@ ul.pagination .active a {
   width: 65px;
   height: 65px;
   text-align: center;
-  background: #ff6600;
+  background: #1E9FB5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3305,8 +3368,9 @@ ul.pagination .active a {
 }
 
 .about {
-  padding: 120px 0;
+  padding: 120px 0px 0px 0px; /* atas, kanan, bawah, kiri */
 }
+
 
 .testimonial .testimonial-item {
   margin-bottom: 30px;
