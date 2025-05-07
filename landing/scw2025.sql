@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Waktu pembuatan: 28 Feb 2025 pada 08.11
+-- Waktu pembuatan: 07 Bulan Mei 2025 pada 11.18
 -- Versi server: 10.4.27-MariaDB
 -- Versi PHP: 8.2.0
 
@@ -87,18 +87,30 @@ CREATE TABLE `speaker` (
 --
 
 INSERT INTO `speaker` (`id`, `gd`, `nama_lengkap`, `gb`, `posisi`, `organisasi`, `foto`, `created_at`, `updated_at`) VALUES
-(1, 'dr.', 'Ariansah Margaluta', 'Sp.B-KBD', '', '', NULL, '2025-02-21 15:24:47', '2025-02-21 17:48:36'),
-(2, 'Ns.', 'Endang Murwaningsih', 'M.Kep., Sp.Kep.MB WOC(ET)N', '', '', '1.jpg', '2025-02-21 15:25:54', '2025-02-21 15:32:41'),
-(3, 'dr.', 'Ulul Albab', 'Sp.OG', '', '', '2.png', '2025-02-21 15:25:54', '2025-02-21 15:33:20'),
-(4, 'Ns.', 'Marina Ruran', 'M.Kep., WOC(ET)N', '', '', '3.jpg', '2025-02-21 15:29:17', '2025-02-21 15:33:54'),
-(5, 'Dr. dr.', 'Rebecca Noerjani Angka', 'M. Biomed', '', '', NULL, '2025-02-21 15:29:17', '2025-02-21 17:48:42'),
-(6, 'Prof', 'Farida', '', '', '', NULL, '2025-02-21 15:29:17', '2025-02-21 17:48:46'),
-(7, 'Ns.', 'Tioma Naibaho', 'M.Kep., WOC(ET)N', '', '', '4.png', '2025-02-21 15:29:17', '2025-02-21 15:35:46'),
-(8, '', 'Chusnul', '', '', '', NULL, '2025-02-21 15:29:17', '2025-02-21 17:48:49'),
-(9, 'dr.', 'Fajar Firsyada', 'Sp.B-KBD', '', '', '5.png', '2025-02-21 15:29:17', '2025-02-21 15:35:51'),
-(10, 'Dr. dr.', 'Sonar Soni Panigoro', 'Sp,B(K)Onk., M.Epid., MARS', '', '', NULL, '2025-02-21 15:30:29', '2025-02-21 17:48:54'),
-(11, 'dr.', 'Rachmat Budi Santoso', 'Sp.U', '', '', NULL, '2025-02-21 15:30:29', '2025-02-21 17:48:57'),
-(12, 'dr.', 'Siti Annisa Nuhonni', 'Sp. KFR(K)', '', '', NULL, '2025-02-21 15:30:29', '2025-02-21 17:49:01');
+(1, 'Prof. Dr.', 'Farida Mohd Said', '', '', '', '1.webp', '2025-02-21 15:24:47', '2025-05-07 15:09:54'),
+(2, '', 'Puan Mariam Mohd. Nassir', '', '', '', '2.webp', '2025-02-21 15:25:54', '2025-05-07 14:17:46'),
+(3, '', 'Widasari Sri Gitarja', 'S.Kp., M.M., MARS, WOC(ET)N\n', '', '', '3.webp', '2025-02-21 15:25:54', '2025-05-07 14:17:46'),
+(4, '', 'Rhyan A. Hitalla', 'RN', '', '', '4.webp', '2025-02-21 15:29:17', '2025-05-07 14:17:46'),
+(5, 'dr.', 'Ariansah Margaluta', 'Sp.B-KBD\n', '', '', '5.webp', '2025-02-21 15:29:17', '2025-05-07 14:17:46'),
+(6, 'dr.', 'Ulul Albab', 'Sp.OG', '', '', '6.webp', '2025-02-21 15:29:17', '2025-05-07 14:17:46'),
+(7, 'Dr. dr.', 'Rebecca Angka', 'M.Biomed\n', '', '', '7.webp', '2025-02-21 15:29:17', '2025-05-07 14:17:46'),
+(8, 'Dr. dr.', 'Sonar Soni Panigoro', 'Sp.B(K) Onk, M.Epid, MARS', '', '', '8.webp', '2025-02-21 15:29:17', '2025-05-07 14:17:46'),
+(9, 'dr.', 'Sjaiful Bachri', 'Sp.B-KBD', '', '', '9.webp', '2025-02-21 15:29:17', '2025-05-07 14:17:46'),
+(10, 'dr.', 'Heldrian Dwinanda Suyuthie', 'SpB, Subsp. Onk(K), M.Ked(Surg)\n', '', '', '10.webp', '2025-02-21 15:30:29', '2025-05-07 14:17:46'),
+(11, 'dr.', 'Rachmat Budi Santoso', 'Sp.U', '', '', '11.webp', '2025-02-21 15:30:29', '2025-05-07 14:17:46'),
+(12, 'dr.', 'Siti Annisa Nuhonni', 'Sp. KFR(K)', '', '', '12.webp', '2025-02-21 15:30:29', '2025-05-07 14:17:46'),
+(13, 'dr.', 'Fajar Firsyada', 'Sp.B, Subsp.BD(K)', '', '', '13.webp', '2025-05-06 15:50:30', '2025-05-07 14:17:46'),
+(14, 'Ns.', 'Endang Murwaningsih', 'S.Kep., M.Kep., Sp.Kep.MB, WOC(ET)N', '', '', '14.webp', '2025-05-06 15:50:30', '2025-05-07 14:17:46'),
+(15, 'Ns.', 'Khairul Bahri', 'S.Kep., WOC(ET)N', '', '', '15.webp', '2025-05-06 15:52:55', '2025-05-07 14:17:46'),
+(16, 'Ns.', 'Marina Ruran', 'S.Kep., M.Kep., WOC(ET)N', '', '', '16.webp', '2025-05-06 15:52:55', '2025-05-07 14:17:46'),
+(17, 'Ns.', 'Pipit Lestari', 'S.Kep., M.Sc, WOC(ET)N', '', '', '17.webp', '2025-05-06 15:54:32', '2025-05-07 14:17:46'),
+(18, 'Ns.', 'Rifa Qidya Ardi', 'S.Kep., CWCC, CSTP', '', '', '18.webp', '2025-05-06 15:54:32', '2025-05-07 14:17:46'),
+(19, 'Ns.', 'Muhammad Fadli', 'S.Kep., CWCC, CSTP', '', '', '19.webp', '2025-05-06 15:55:55', '2025-05-07 14:17:46'),
+(20, '', 'Tomy Abas', 'S.Kep., WOC(ET)N', '', '', '20.webp', '2025-05-06 15:55:55', '2025-05-07 14:17:46'),
+(21, 'Ns.', 'Kana Fajar', 'S.Kep., WOC(ET)N', '', '', '21.webp', '2025-05-06 15:57:34', '2025-05-07 14:17:46'),
+(22, 'Ns.', 'Tioma Naibaho', 'S.Kep., M.Kep., WOC(ET)N', '', '', '22.webp', '2025-05-06 15:57:34', '2025-05-07 14:17:46'),
+(23, '', 'Chusnul Justanti', 'Kes., S.Tr, Ftr, M.Kes', '', '', '23.webp', '2025-05-06 15:58:16', '2025-05-07 14:17:46'),
+(24, '', 'Tuti Widiastuty', '', '', '', '24.webp', '2025-05-06 15:58:16', '2025-05-07 14:17:46');
 
 -- --------------------------------------------------------
 
@@ -178,7 +190,7 @@ ALTER TABLE `jadwal`
 -- AUTO_INCREMENT untuk tabel `speaker`
 --
 ALTER TABLE `speaker`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT untuk tabel `workshop`
