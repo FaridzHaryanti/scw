@@ -20,17 +20,16 @@
 	<div class="container">
 		<div class="row">
         <?php while ($row = mysqli_fetch_assoc($result_speaker)) { ?>
-			<div class="col-lg-3 col-6">
+			<div class="col-lg-3 col-6 mb-3">
 				<!-- Speaker 1 -->
 				<div class="speaker-item">
 					<div class="image">
-                        <img src="images/pembicara/<?= htmlspecialchars($row['foto'] ?? 'none.jpg'); ?>" 
+                        <img src="images/speaker/<?= htmlspecialchars($row['foto'] ?? 'tidak_tersedia.png'); ?>" 
 						alt="<?= htmlspecialchars($row['nama_lengkap'] ?? 'Speaker'); ?>" 
 						class="img-fluid">
 					</div>
                     <div class="content text-center">
-						<h5><a href=""><?= htmlspecialchars($row['gd'] . ' ' . $row['nama_lengkap'] . ', ' . $row['gb']); ?></a></h5>
-						<p><?= htmlspecialchars($row['posisi']); ?></p>
+						<p><a href=""><?= htmlspecialchars($row['gd'] . ' ' . $row['nama_lengkap'] . ', ' . $row['gb']); ?></a></p>
 					</div>
                 </div>
             </div>

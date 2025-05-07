@@ -1,5 +1,21 @@
 <?php include 'header.php'; ?>
 
+<section class="page-title bg-title overlay-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<div class="title">
+					<h3>TENTANG</h3>
+				</div>
+				<ol class="breadcrumb p-0 m-0">
+				  <li class="breadcrumb-item"><a href="index.php">Beranda</a></li>
+				  <li class="breadcrumb-item active">tentang</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section class="news section">
 	<div class="container">
 		<div class="row mt-30">
@@ -7,7 +23,7 @@
             <!-- Article -->
             <article class="blog-post single">
                 <div class="post-thumb">
-                    <img src="images/about.jpg" alt="post-image" class="img-fluid">
+                    <img src="images/tentang.png" alt="post-image" class="img-fluid">
                 </div>
                 <div class="post-content">
                     <div class="post-title" style="margin-bottom: 50px;">

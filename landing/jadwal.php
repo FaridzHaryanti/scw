@@ -22,7 +22,7 @@
 			<div class="col-12">
 				<div class="section-title">
 					<h3>Jadwal Kegiatan</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+					<p>Kegiatan berlangsung 27 Juni 2025 s.d 28 Juni 2025</p>
 				</div>
 			</div>
 		</div>
@@ -49,63 +49,48 @@
 				<div class="schedule-contents">
 					<div class="tab-content" id="pills-tabContent">
 					  <div class="tab-pane fade show active schedule-item" id="nov20">
-					  	<!-- Headings -->
-					  	<ul class="m-0 p-0">
-					  		<li class="headings text-center">
-					  			<div class="time">Jam</div>
-					  			<div class="speaker">Kegiatan</div>
-								<div class="subject">Pembicara</div>
-					  			<div class="venue">Venue</div>
-					  		</li>
-					  		<!-- Schedule Details -->
-							<?php while ($row = mysqli_fetch_assoc($result_jadwal1)) { ?>
-					  		<li class="schedule-details text-center">
-					  			<div class="block">
-					  				<!-- time -->
-							  		<div class="time">
-									  <span class="time"><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></span>
-							  		</div>
-							  		<!-- Speaker -->
-							  		<div class="speaker">
-										<span class="name"><?= htmlspecialchars($row['nama']); ?></span>
-							  		</div>
-							  		<!-- Subject -->
-							  		<div class="subject"><?= htmlspecialchars($row['speaker']); ?></div>
-							  		<!-- Venue -->
-							  		<div class="venue"><?= htmlspecialchars($row['lokasi']); ?></div>
-					  			</div>
-					  		</li>
-							<?php } ?>
-					  	</ul>
+					  	<table class="table table-bordered table-hover table-striped">
+							<thead class="bg-info text-white">
+								<tr>
+									<th class="text-center" style="width: 15%;">Jam</th>
+									<th class="text-center" style="width: 35%;">Kegiatan</th>
+									<th class="text-center" style="width: 35%;">Pembicara</th>
+									<th class="text-center" style="width: 15%;">Lokasi</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php while ($row = mysqli_fetch_assoc($result_jadwal1)) { ?>
+								<tr>
+									<td><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></td>
+									<td><?= htmlspecialchars($row['nama']); ?></td>
+									<td><?= htmlspecialchars($row['speaker']); ?></td>
+									<td><?= htmlspecialchars($row['lokasi']); ?></td>
+								</tr>
+								<?php } ?>
+							</tbody>
+						</table>
 					  </div>
 					  <div class="tab-pane fade schedule-item" id="nov21">
-					  	<!-- Headings -->
-					  	<ul class="m-0 p-0">
-					  		<li class="headings text-center">
-					  			<div class="time">Jam</div>
-					  			<div class="speaker">Kegiatan</div>
-					  			<div class="subject">Pembicara</div>
-					  			<div class="venue">Venue</div>
-					  		</li>
-					  		<!-- Schedule Details -->
-							<?php while ($row = mysqli_fetch_assoc($result_jadwal2)) { ?>
-					  		<li class="schedule-details text-center">
-					  			<div class="block">
-					  				<!-- time -->
-							  		<div class="time">
-									  <span class="time"><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></span></div>
-							  		<!-- Speaker -->
-							  		<div class="speaker">
-										<span class="name"><?= htmlspecialchars($row['nama']); ?></span>
-							  		</div>
-							  		<!-- Subject -->
-							  		<div class="subject"><?= htmlspecialchars($row['speaker']); ?></div>
-							  		<!-- Venue -->
-							  		<div class="venue"><?= htmlspecialchars($row['lokasi']); ?></div>
-					  			</div>
-					  		</li>
-							<?php } ?>
-					  	</ul>
+					  	<table class="table table-bordered table-hover table-striped">
+							<thead class="bg-info text-white">
+								<tr>
+									<th class="text-center" style="width: 15%;">Jam</th>
+									<th class="text-center" style="width: 35%;">Kegiatan</th>
+									<th class="text-center" style="width: 35%;">Pembicara</th>
+									<th class="text-center" style="width: 15%;">Lokasi</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php while ($row = mysqli_fetch_assoc($result_jadwal2)) { ?>
+								<tr>
+									<td><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></td>
+									<td><?= htmlspecialchars($row['nama']); ?></td>
+									<td><?= htmlspecialchars($row['speaker']); ?></td>
+									<td><?= htmlspecialchars($row['lokasi']); ?></td>
+								</tr>
+								<?php } ?>
+							</tbody>
+						</table>
 					  </div>
 					</div>
 				</div>

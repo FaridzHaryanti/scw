@@ -17,7 +17,11 @@ $result_workshop = mysqli_query($koneksi, $query_workshop);
 $query_speaker = "SELECT * FROM speaker ORDER BY id ASC";
 $result_speaker = mysqli_query($koneksi, $query_speaker);
 
+// Speaker 8 teratas
+$query_speaker_8 = "SELECT * FROM speaker ORDER BY id ASC LIMIT 8";
+$result_speaker_8 = mysqli_query($koneksi, $query_speaker_8);
 
+// Workshop
 $workshop_id = isset($_GET['id']) ? $_GET['id'] : 1;
 // Ambil detail workshop utama
 $query_workshops = "SELECT * FROM jadwal WHERE ket = 1 AND id = $workshop_id";
@@ -38,6 +42,7 @@ $result_detail = mysqli_query($koneksi, $query_detail);
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Stoma Care Week 2025</title>
   
   <!-- PLUGINS CSS STYLE -->

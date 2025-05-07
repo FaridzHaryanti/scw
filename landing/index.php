@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
 <section class="ticket-feature">
-    <div id="ticketCarousel" class="carousel slide" data-touch="false" data-ride="carousel" data-interval="5000" data-pause="hover">
+    <div id="ticketCarousel" class="carousel slide" data-touch="false" data-ride="carousel" data-interval="" data-pause="hover">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="container-fluid m-0 p-0">
@@ -10,32 +10,18 @@
                             <div class="block bg-timer overlay-dark text-center">
                                 <div class="section-title white">
 									<h1 class="d-none d-md-block"><b>STOMA CARE WEEK 2025</b></h1>
-                                    <h5 class="d-none d-md-block" style="color: white;">Bridging the Gap Connecting Knowledge, Support and Care</h5>
+                                    <h5 class="d-none d-md-block" style="color: white;">Bridging the Gap: Connecting Knowledge, Support and Care</h5>
 									<div class="d-none d-md-block"><br><br></div>
 									<h5 class="d-none d-md-block" style="color: white;">27 - 28 JUNI 2025</h5>
-                                    <h5 class="d-none d-md-block" style="color: white;">IPB CONVENTION CENTER BOTANI SQUARE KOTA BOGOR</h5>
+                                    <h5 class="d-none d-md-block" style="color: white;">GEDUNG DINAS KESEHATAN KOTA BOGOR</h5>
 									<h3 class="d-block d-md-none" style="color: white;"><b>STOMA CARE WEEK 2025</b></h3>
-									<h7 class="d-block d-md-none" style="color: white;">Bridging the Gap Connecting Knowledge, Support and Care</h7>	
+									<h7 class="d-block d-md-none" style="color: white;">Bridging the Gap: Connecting Knowledge, Support and Care</h7>	
 									<div class="timer d-block d-md-none"></div>
 									<p class="d-block d-md-none" style="color: white;">27 - 28 JUNI 2025</p>
-                                    <p class="d-block d-md-none" style="color: white;">IPB CONVENTION CENTER BOTANI SQUARE KOTA BOGOR</p>
+                                    <p class="d-block d-md-none" style="color: white;">GEDUNG DINAS KESEHATAN KOTA BOGOR</p>
                                 </div>
                                 <div class="timer d-none d-md-block"></div>
                                 <a href="https://wocare.id/event/detail_acara.php?id=106" class="btn btn-main-md">DAPATKAN SEGERA!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-			<div class="carousel-item">
-                <div class="container-fluid m-0 p-0">
-                    <div class="row p-0 m-0">
-                        <div class="col-lg-12 p-0 m-0">
-                            <div class="block bg-timer-video overlay-dark text-center">
-								<video id="bgVideo" autoplay loop playsinline muted>
-									<source src="images/video_stoma.mp4" type="video/mp4">
-								</video>
-								<button id="unmuteBtn">🔊 Unmute</button>								
                             </div>
                         </div>
                     </div>
@@ -65,7 +51,7 @@
 		<div class="row">
 			<div class="col-lg-5 col-md-6 align-self-center">
 				<div class="image-block two bg-about">
-					<img class="img-fluid" src="images/about.jpg" alt="">
+					<img class="img-fluid" src="images/tentang.png" alt="Tentang Acara">
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 align-self-center ml-lg-auto">
@@ -117,39 +103,11 @@
 					<div class="pricing-heading">
 						<!-- Title -->
 						<div class="title">
-							<h6>Full Online</h6>
+							<h6>Symposium & Workshop</h6>
 						</div>
 						<!-- Price -->
 						<div class="price">
-							<h2>60.000<span>IDR</span></h2>
-							<p>/Orang</p>
-						</div>
-					</div>
-					<div class="pricing-body">
-						<!-- Feature List -->
-						<ul class="feature-list m-0 p-0">
-							<li><p><span class="fa fa-check-circle available"></span>E-Materi</p></li>
-							<li><p><span class="fa fa-check-circle available"></span>E-Sertifikat SKP KEMENKES RI</p></li>
-							<li><p><span class="fa fa-times-circle unavailable"></span>Snack dan Makan Siang</p></li>
-							<li><p><span class="fa fa-times-circle unavailable"></span>Goodybag</p></li>
-						</ul>
-					</div>
-					<div class="pricing-footer text-center">
-						<a href="https://wocare.id/event/detail_acara.php?id=107" class="btn btn-main-md">Beli Tiket</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<!-- Pricing Item -->
-				<div class="pricing-item">
-					<div class="pricing-heading">
-						<!-- Title -->
-						<div class="title">
-							<h6>Offline Early Bird</h6>
-						</div>
-						<!-- Price -->
-						<div class="price">
-							<h2>600.000<span>IDR</span></h2>
+							<h2>350.000<span>IDR</span></h2>
 							<p>/Orang</p>
 						</div>
 					</div>
@@ -167,30 +125,72 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-lg-4 col-md-6">
+				<!-- Pricing Item -->
+				<div class="pricing-item">
+					<div class="pricing-heading">
+						<!-- Title -->
+						<div class="title">
+							<h6>Full Workshop</h6>
+						</div>
+						<!-- Price -->
+						<div class="price">
+							<h2>550.000<span>IDR</span></h2>
+							<p>/Orang</p>
+						</div>
+					</div>
+					<div class="pricing-body">
+						<!-- Feature List -->
+						<ul class="feature-list m-0 p-0">
+							<li><p><span class="fa fa-check-circle available"></span>E-Materi</p></li>
+							<li><p><span class="fa fa-check-circle available"></span>E-Sertifikat SKP KEMENKES RI</p></li>
+							<li><p><span class="fa fa-check-circle available"></span>Snack dan Makan Siang</p></li>
+							<li><p><span class="fa fa-check-circle available"></span>Goodybag</p></li>
+						</ul>
+					</div>
+					<div class="pricing-footer text-center">
+						<a href="https://wocare.id/event/detail_acara.php?id=107" class="btn btn-main-md">Beli Tiket</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 
-<!--====  End of Pricing Table  ====-->
+<!--====  Pembicara  ====-->
 <section class="speakers-full-width">
 	<div class="container-fluid p-0">
 		<div class="row">
 			<div class="col-12">
-				<!-- Speaker Slider -->
-				<div class="speaker-slider">
-					<?php while ($row = mysqli_fetch_assoc($result_speaker)) { ?>
-					<div class="speaker-image">
-					<img src="images/pembicara/<?= htmlspecialchars($row['foto'] ?? 'none.jpg'); ?>" 
-						alt="<?= htmlspecialchars($row['nama'] ?? 'Speaker'); ?>" 
-						class="img-fluid">
-						<div class="primary-overlay text-center">
-						<h5><?= htmlspecialchars($row['gd'] . ' ' . $row['nama_lengkap'] . ', ' . $row['gb']); ?></h5>
-						<p><?= htmlspecialchars($row['posisi']); ?></p>
-						</div>
-					</div>
-					<?php } ?>
+				<div class="section-title">
+					<h3>Pembicara</h3>
+					<p>Menghadirkan pembicara nasional dan internasional</p>
 				</div>
 			</div>
+			<section class="col-12 section speakers white">
+				<div class="container align-center">
+					<div class="row">
+					<?php while ($row = mysqli_fetch_assoc($result_speaker_8)) { ?>
+						<div class="col-lg-3 col-6 mb-3">
+							<!-- Speaker 1 -->
+							<div class="speaker-item">
+								<div class="image">
+									<img src="images/speaker/<?= htmlspecialchars($row['foto'] ?? 'tidak_tersedia.png'); ?>" 
+									alt="<?= htmlspecialchars($row['nama_lengkap'] ?? 'Speaker'); ?>" 
+									class="img-fluid">
+								</div>
+								<div class="content text-center">
+									<p><a href=""><?= htmlspecialchars($row['gd'] . ' ' . $row['nama_lengkap'] . ', ' . $row['gb']); ?></a></p>
+								</div>
+							</div>
+						</div>
+					<?php } ?>
+					</div>
+					<div class="section-title">
+						<a href="pembicara.php" class="btn btn-main-md">Selengkapnya..</a>
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
 </section>
@@ -205,6 +205,7 @@
 			<div class="col-12">
 				<div class="section-title">
 					<h3>Jadwal Kegiatan</h3>
+					<p>Kegiatan berlangsung 27 Juni 2025 s.d 28 Juni 2025</p>
 				</div>
 			</div>
 		</div>
@@ -231,63 +232,48 @@
 				<div class="schedule-contents">
 					<div class="tab-content" id="pills-tabContent">
 					  <div class="tab-pane fade show active schedule-item" id="nov20">
-					  	<!-- Headings -->
-					  	<ul class="m-0 p-0">
-					  		<li class="headings text-center">
-					  			<div class="time">Jam</div>
-					  			<div class="speaker">Kegiatan</div>
-								<div class="subject">Pembicara</div>
-					  			<div class="venue">Venue</div>
-					  		</li>
-					  		<!-- Schedule Details -->
-							<?php while ($row = mysqli_fetch_assoc($result_jadwal1)) { ?>
-					  		<li class="schedule-details text-center">
-					  			<div class="block">
-					  				<!-- time -->
-							  		<div class="time">
-									  <span class="time"><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></span>
-							  		</div>
-							  		<!-- Speaker -->
-							  		<div class="speaker">
-										<span class="name"><?= htmlspecialchars($row['nama']); ?></span>
-							  		</div>
-							  		<!-- Subject -->
-							  		<div class="subject"><?= htmlspecialchars($row['speaker']); ?></div>
-							  		<!-- Venue -->
-							  		<div class="venue"><?= htmlspecialchars($row['lokasi']); ?></div>
-					  			</div>
-					  		</li>
-							<?php } ?>
-					  	</ul>
+					  	<table class="table table-bordered table-hover table-striped">
+							<thead class="bg-info text-white">
+								<tr>
+									<th class="text-center" style="width: 15%;">Jam</th>
+									<th class="text-center" style="width: 35%;">Kegiatan</th>
+									<th class="text-center" style="width: 35%;">Pembicara</th>
+									<th class="text-center" style="width: 15%;">Lokasi</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php while ($row = mysqli_fetch_assoc($result_jadwal1)) { ?>
+								<tr>
+									<td><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></td>
+									<td><?= htmlspecialchars($row['nama']); ?></td>
+									<td><?= htmlspecialchars($row['speaker']); ?></td>
+									<td><?= htmlspecialchars($row['lokasi']); ?></td>
+								</tr>
+								<?php } ?>
+							</tbody>
+						</table>
 					  </div>
 					  <div class="tab-pane fade schedule-item" id="nov21">
-					  	<!-- Headings -->
-					  	<ul class="m-0 p-0">
-					  		<li class="headings text-center">
-					  			<div class="time">Jam</div>
-					  			<div class="speaker">Kegiatan</div>
-					  			<div class="subject">Pembicara</div>
-					  			<div class="venue">Venue</div>
-					  		</li>
-					  		<!-- Schedule Details -->
-							<?php while ($row = mysqli_fetch_assoc($result_jadwal2)) { ?>
-					  		<li class="schedule-details text-center">
-					  			<div class="block">
-					  				<!-- time -->
-							  		<div class="time">
-									  <span class="time"><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></span></div>
-							  		<!-- Speaker -->
-							  		<div class="speaker">
-										<span class="name"><?= htmlspecialchars($row['nama']); ?></span>
-							  		</div>
-							  		<!-- Subject -->
-							  		<div class="subject"><?= htmlspecialchars($row['speaker']); ?></div>
-							  		<!-- Venue -->
-							  		<div class="venue"><?= htmlspecialchars($row['lokasi']); ?></div>
-					  			</div>
-					  		</li>
-							<?php } ?>
-					  	</ul>
+					  	<table class="table table-bordered table-hover table-striped">
+							<thead class="bg-info text-white">
+								<tr>
+									<th class="text-center" style="width: 15%;">Jam</th>
+									<th class="text-center" style="width: 35%;">Kegiatan</th>
+									<th class="text-center" style="width: 35%;">Pembicara</th>
+									<th class="text-center" style="width: 15%;">Lokasi</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php while ($row = mysqli_fetch_assoc($result_jadwal2)) { ?>
+								<tr>
+									<td><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></td>
+									<td><?= htmlspecialchars($row['nama']); ?></td>
+									<td><?= htmlspecialchars($row['speaker']); ?></td>
+									<td><?= htmlspecialchars($row['lokasi']); ?></td>
+								</tr>
+								<?php } ?>
+							</tbody>
+						</table>
 					  </div>
 					</div>
 				</div>
@@ -307,6 +293,7 @@
 			<div class="col-12">
 				<div class="section-title">
 					<h3>Workshop</h3>
+					<p>Berbagai Workshop yang akan diadakan</p>
 				</div>
 			</div>
 		</div>
@@ -315,21 +302,18 @@
 			<div class="col-lg-6">
 				<article class="news-post-hr">
 					<div class="post-thumb">
-						<a href="">
+						<a href="workshop.php?id=<?= htmlspecialchars($row['id']); ?>">
 							<img src="images/workshop.png" alt="post-image" class="img-fluid">
 						</a>
 					</div>
 					<div class="post-contents border-top">
-						<div class="post-title"><h6><a href=""><?= htmlspecialchars($row['nama']); ?></a></h6></div>
+						<div class="post-title"><h6><a href="workshop.php?id=<?= htmlspecialchars($row['id']); ?>"><?= htmlspecialchars($row['nama']); ?></a></h6></div>
 						<div class="post-exerpts">
 							<p>
 							</p>
 						</div>
 						<div class="date">
 							<h4><?= ($row['hari'] == 1) ? "27" : "28"; ?><span>Juni</span></h4>
-						</div>
-						<div class="more">
-							<a href="">Ikuti</a>
 						</div>
 					</div>
 				</article>
@@ -359,6 +343,20 @@
 				<div class="block text-center">
 					<!-- Sponsors image list -->
 					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/kota_bogor.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/sahabat_ostomate.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
 						<li class="list-inline-item">
 							<div class="image-block text-center">
 								<a href="#">
@@ -392,6 +390,20 @@
 						<li class="list-inline-item">
 							<div class="image-block text-center">
 								<a href="#">
+									<img src="images/logo/inwcca.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/ostomy_nurses_association_of_the_philippines.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
 									<img src="images/logo/oas_ostomy_association_of_singapore.jpg" alt="sponsors-logo" class="img-fluid">
 								</a>
 							</div>
@@ -410,17 +422,10 @@
 								</a>
 							</div>
 						</li>
-						<li class="list-inline-item">
-							<div class="image-block text-center">
-								<a href="#">
-									<img src="images/logo/ostomy_nurses_association_of_the_philippines.jpg" alt="sponsors-logo" class="img-fluid">
-								</a>
-							</div>
-						</li>
 					</ul>
 				</div>
 				<div class="sponsor-btn text-center">
-					<a href="#" class="btn btn-main-md">Become a sponsor</a>
+					<a href="doc/Proposal-SCW-2025.pdf" class="btn btn-main-md">Become a sponsor</a>
 				</div>
 			</div>
 		</div>

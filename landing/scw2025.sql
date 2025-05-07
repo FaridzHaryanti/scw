@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Waktu pembuatan: 24 Feb 2025 pada 11.05
+-- Waktu pembuatan: 28 Feb 2025 pada 08.11
 -- Versi server: 10.4.27-MariaDB
 -- Versi PHP: 8.2.0
 
@@ -58,7 +58,7 @@ INSERT INTO `jadwal` (`id`, `hari`, `jam_mulai`, `jam_selesai`, `nama`, `speaker
 (11, 1, '16:00:00', '17:00:00', 'Awards and Stoma Gathering Clossing', 'Widasari Sri Gitarja, S.Kp., MM., MARS, WOC(ET)N ', 'BALLROOM 1  PLENARY ', 250, NULL, '2025-02-21 03:57:19', '2025-02-21 03:57:19'),
 (12, 2, '09:00:00', '12:00:00', 'Workshop 4:  Surgical Wound Dehiscence And Fistula With NPWT', 'Ns. Khairul Bahri, S.Kep, WOC(ET)N | dr. Heldrian Dwinanda Suyuthie, SpB, Subsp. Onk(K), M.Ked(Surg)', 'BALLROOM 1  PLENARY ', 250, 1, '2025-02-21 04:10:37', '2025-02-24 09:44:48'),
 (13, 2, '09:00:00', '12:00:00', 'Workshop 5:  Continence Management in Stoma Patient', 'dr. Rachmat Budi Santoso, Sp.U | Chusnul Justanti, Kes., S.Tr, Ftr, M.Kes | Ns. Marina Ruran, M.Kep., WOC(ET)N', 'CLASSROOM A WORKSHOP', 40, 1, '2025-02-21 04:12:42', '2025-02-24 09:45:48'),
-(14, 2, '09:00:00', '12:00:00', 'Workshop 6: Stoma Sitting', 'dr. Sjaiful Bachri, SpB-KBD | dr. Siti Annisa Nuhonni, Sp.KFR (K) | Ns. Kana Fajar, S.Kep. WOC(ET)N', 'CLASSROOM A WORKSHOP', 250, 1, '2025-02-21 04:12:42', '2025-02-24 09:46:56'),
+(14, 2, '09:00:00', '12:00:00', 'Workshop 6: Stoma Sitting', 'dr. Sjaiful Bachri, SpB-KBD | dr. Siti Annisa Nuhonni, Sp.KFR (K) | Ns. Kana Fajar, S.Kep. WOC(ET)N', 'CLASSROOM B WORKSHOP', 250, 1, '2025-02-21 04:12:42', '2025-02-28 07:10:53'),
 (15, 2, '13:00:00', '14:00:00', 'Establishing & Managing a Ostomy Practice in a Hospital Setting', 'Rhyan A Hitalla., RN - Philipines', 'BALLROOM 1  PLENARY ', 250, NULL, '2025-02-24 08:28:46', '2025-02-24 08:28:46'),
 (16, 2, '14:00:00', '15:30:00', 'Interactive Talkshow Stoma Nurse – Ostomate – Surgeon: Stoma Sitting & Stoma Bag In Right Position', 'dr. Fajar Firsyada, Sp.B,Subsp.BD(K) | Tuti Widiastuty (Ostomate) | Ns. Tioma Naibaho, S.Kep., M.Kep', 'BALLROOM 1  PLENARY ', 250, NULL, '2025-02-24 08:28:46', '2025-02-24 08:28:46'),
 (17, 2, '16:00:00', '16:15:00', 'Encompassing barrier of stoma Care: Unveiling the Transformative Impact of Indonesian ETNEP ', 'Widasari Sri Gitarja, S.Kp., MM. MARS, WOC(ET)N', 'BALLROOM 1  PLENARY ', 250, NULL, '2025-02-24 08:28:46', '2025-02-24 08:28:46'),
@@ -136,7 +136,11 @@ INSERT INTO `workshop` (`id`, `jam_mulai`, `jam_selesai`, `nama`, `pembicara`, `
 (12, '11:00:00', '12:00:00', 'Workshop: Dead Space in Chronic Wounds', 'Tim : Ns. Khairul Bahri, S.Kep, WOC(ET)N ', 12, '2025-02-24 08:57:41', '2025-02-24 08:57:41'),
 (13, '09:00:00', '09:30:00', 'Continence in Aging Populations: Urological Perspe', 'dr. Rachmat Budi Santoso, SpU', 13, '2025-02-24 08:57:41', '2025-02-24 08:57:41'),
 (14, '09:30:00', '10:00:00', 'Empowering Stoma Patients: A Physiotherapists Guid', 'dr. Heldrian Dwinanda Suyuthie, SpB, Subsp. Onk(K), M.Ked(Surg)', 13, '2025-02-24 08:57:41', '2025-02-24 08:57:41'),
-(15, '10:00:00', '10:45:00', 'Rebuilding Confidence: Functional Training for Sto', 'Tim : Ns. Marina Ruran, M.Kep., WOC(ET)N', 13, '2025-02-24 08:57:41', '2025-02-24 08:57:41');
+(15, '10:00:00', '10:45:00', 'Rebuilding Confidence: Functional Training for Sto', 'Tim : Ns. Marina Ruran, M.Kep., WOC(ET)N', 13, '2025-02-24 08:57:41', '2025-02-24 08:57:41'),
+(16, '09:00:00', '09:30:00', 'The importance of Stoma Sitting as multidiciplinar', 'dr. Sjaiful Bachri, SpB-KBD (RSUD CIAWI-Bogor)', 14, '2025-02-27 04:00:03', '2025-02-27 04:00:03'),
+(17, '09:30:00', '10:00:00', 'Stoma Sitting for Active Patients: Balancing Mobil', 'dr. Siti Annisa Nuhonni, Sp.KFR (K)', 14, '2025-02-27 04:00:03', '2025-02-27 04:00:03'),
+(18, '10:00:00', '10:45:00', 'Stoma Sitting: Fulfilling rights of ostomate', 'Ns. Kana Fajar, S.Kep. WOC(ET)N ', 14, '2025-02-27 04:00:03', '2025-02-27 04:00:03'),
+(19, '11:00:00', '12:00:00', 'Workshop: Stoma Sitting', 'Tommy Abas, S.Kep, WOC(ET)N | M. Dafa | Ns. Kana Fajar, S.Kep, WOC(ET)N', 14, '2025-02-27 04:00:03', '2025-02-27 04:00:03');
 
 --
 -- Indexes for dumped tables
@@ -180,7 +184,7 @@ ALTER TABLE `speaker`
 -- AUTO_INCREMENT untuk tabel `workshop`
 --
 ALTER TABLE `workshop`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

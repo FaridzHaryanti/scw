@@ -5,11 +5,12 @@
 <section class="map">
     <iframe 
         title="Peta Acara"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7926.725445403804!2d106.806381!3d-6.601766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5c4acdb8775%3A0x383b5bc73b307ee8!2sIPB%20International%20Convention%20Center!5e0!3m2!1sen!2sid!4v1738744889963!5m2!1sen!2sid" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5690636420168!2d106.79668437499343!3d-6.5759418934175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e4c7e94375%3A0x500b6c3db97f562e!2sBogor%20City%20Departement%20of%20Health!5e0!3m2!1sen!2sid!4v1746518911889!5m2!1sen!2sid"
         width="100%" height="600" 
         style="border:0;" allowfullscreen="" 
         loading="lazy">
     </iframe>
+    
     <div class="address-block">
 		<h7>Contact Us!</h7>
         <h4>Solusi Medikal Event</h4>
@@ -82,12 +83,12 @@
 		}
 
 		// Hentikan carousel sementara
-		$('.carousel').carousel('pause');
+		//$('.carousel').carousel('pause');
 
 		// (Opsional) Restart lagi setelah 5 detik
-		setTimeout(function() {
-			$('.carousel').carousel('cycle');
-		}, 5000);
+		//setTimeout(function() {
+		//	$('.carousel').carousel('cycle');
+		//}, 5000);
 	});
   </script>
 	
