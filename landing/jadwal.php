@@ -54,19 +54,19 @@
 								<tr>
 									<th class="text-center" style="width: 15%;">Jam</th>
 									<th class="text-center" style="width: 35%;">Kegiatan</th>
-									<th class="text-center" style="width: 35%;">Pembicara</th>
+									<th class="text-center col-speaker" style="width: 35%;">Pembicara</th>
 									<th class="text-center" style="width: 15%;">Lokasi</th>
 								</tr>
 							</thead>
 							<tbody>
-								<?php while ($row = mysqli_fetch_assoc($result_jadwal1)) { ?>
+							<?php while ($row = mysqli_fetch_assoc($result_jadwal1)) { ?>
 								<tr>
 									<td><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></td>
 									<td><?= htmlspecialchars($row['nama']); ?></td>
-									<td><?= htmlspecialchars($row['speaker']); ?></td>
+									<td class="col-speaker"><?= htmlspecialchars($row['speaker']); ?></td>
 									<td><?= htmlspecialchars($row['lokasi']); ?></td>
 								</tr>
-								<?php } ?>
+							<?php } ?>
 							</tbody>
 						</table>
 					  </div>
@@ -76,7 +76,7 @@
 								<tr>
 									<th class="text-center" style="width: 15%;">Jam</th>
 									<th class="text-center" style="width: 35%;">Kegiatan</th>
-									<th class="text-center" style="width: 35%;">Pembicara</th>
+									<th class="text-center col-speaker" style="width: 35%;">Pembicara</th>
 									<th class="text-center" style="width: 15%;">Lokasi</th>
 								</tr>
 							</thead>
@@ -85,7 +85,7 @@
 								<tr>
 									<td><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></td>
 									<td><?= htmlspecialchars($row['nama']); ?></td>
-									<td><?= htmlspecialchars($row['speaker']); ?></td>
+									<td class="col-speaker"><?= htmlspecialchars($row['speaker']); ?></td>
 									<td><?= htmlspecialchars($row['lokasi']); ?></td>
 								</tr>
 								<?php } ?>

@@ -23,7 +23,15 @@
             <!-- Article -->
             <article class="blog-post single">
                 <div class="post-thumb">
-                    <img src="images/tentang.png" alt="post-image" class="img-fluid">
+                    <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/GvJVl1SZWmY" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    </div>
                 </div>
                 <div class="post-content">
                     <div class="post-title" style="margin-bottom: 50px;">

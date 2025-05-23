@@ -21,6 +21,18 @@ $result_speaker = mysqli_query($koneksi, $query_speaker);
 $query_speaker_8 = "SELECT * FROM speaker ORDER BY id ASC LIMIT 8";
 $result_speaker_8 = mysqli_query($koneksi, $query_speaker_8);
 
+// Speaker Internasional
+$query_speaker_internasional = "SELECT * FROM speaker WHERE kat = 1 ORDER BY id";
+$result_speaker_internasional = mysqli_query($koneksi, $query_speaker_internasional);
+
+// Speaker Nasional
+$query_speaker_nasional = "SELECT * FROM speaker WHERE kat = 0 ORDER BY id";
+$result_speaker_nasional = mysqli_query($koneksi, $query_speaker_nasional);
+
+// Ostomate
+$query_ostomate = "SELECT * FROM speaker WHERE kat = 2 ORDER BY id";
+$result_ostomate = mysqli_query($koneksi, $query_ostomate);
+
 // Workshop
 $workshop_id = isset($_GET['id']) ? $_GET['id'] : 1;
 // Ambil detail workshop utama

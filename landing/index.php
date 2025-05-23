@@ -49,14 +49,12 @@
 <section class="section about">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-5 col-md-6 align-self-center">
-				<div class="image-block two bg-about">
-					<img class="img-fluid" src="images/tentang.png" alt="Tentang Acara">
-				</div>
+			<div class="col-lg-5 col-md-6 align-self-center">	
+					<img class="img-fluid d-none d-md-block" src="images/tentang.png" alt="Tentang Acara">
 			</div>
 			<div class="col-lg-6 col-md-6 align-self-center ml-lg-auto">
 				<div class="content-block">
-					<h2>Stoma Care Week</h2>
+					<h2 class="d-none d-md-block" >Stoma Care Week</h2>
 					<div class="description-one">
 						<p>
 						Adanya peningkatan pasien dengan Ca Colon
@@ -153,44 +151,67 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-lg-4 col-md-6">
+				<!-- Pricing Item -->
+				<div class="pricing-item">
+					<div class="pricing-heading">
+						<!-- Title -->
+						<div class="title">
+							<h6>Online</h6>
+						</div>
+						<!-- Price -->
+						<div class="price">
+							<h2>150.000<span>IDR</span></h2>
+							<p>/Orang</p>
+						</div>
+					</div>
+					<div class="pricing-body">
+						<!-- Feature List -->
+						<ul class="feature-list m-0 p-0">
+							<li><p><span class="fa fa-check-circle available"></span>E-Materi</p></li>
+							<li><p><span class="fa fa-check-circle available"></span>E-Sertifikat SKP KEMENKES RI</p></li>
+							<li><p><span class="fa fa-times-circle unavailable"></span>Snack dan Makan Siang</p></li>
+							<li><p><span class="fa fa-times-circle unavailable"></span>Goodybag</p></li>
+						</ul>
+					</div>
+					<div class="pricing-footer text-center">
+						<a href="https://wocare.id/event/detail_acara.php?id=156" class="btn btn-main-md">Beli Tiket</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 
-<!--====  Pembicara  ====-->
+<!--====  Pembicara Slider  ====-->
 <section class="speakers-full-width">
 	<div class="container-fluid p-0">
 		<div class="row">
 			<div class="col-12">
 				<div class="section-title">
 					<h3>Pembicara</h3>
-					<p>Menghadirkan pembicara nasional dan internasional</p>
+					<p>Internasional - Nasional - Ostomate</p>
 				</div>
 			</div>
-			<section class="col-12 section speakers white">
-				<div class="container align-center">
-					<div class="row">
+			<div class="col-12">
+				<!-- Speaker Slider -->
+				<div class="speaker-slider">
 					<?php while ($row = mysqli_fetch_assoc($result_speaker_8)) { ?>
-						<div class="col-lg-3 col-6 mb-3">
-							<!-- Speaker 1 -->
-							<div class="speaker-item">
-								<div class="image">
-									<img src="images/speaker/<?= htmlspecialchars($row['foto'] ?? 'tidak_tersedia.png'); ?>" 
-									alt="<?= htmlspecialchars($row['nama_lengkap'] ?? 'Speaker'); ?>" 
-									class="img-fluid">
-								</div>
-								<div class="content text-center">
-									<p><a href=""><?= htmlspecialchars($row['gd'] . ' ' . $row['nama_lengkap'] . ', ' . $row['gb']); ?></a></p>
-								</div>
-							</div>
+					<div class="speaker-image">
+					<img src="images/speaker/<?= htmlspecialchars($row['foto'] ?? 'none.jpg'); ?>" 
+						alt="<?= htmlspecialchars($row['nama'] ?? 'Speaker'); ?>" 
+						class="img-fluid">
+						<div class="primary-overlay text-center">
+						<h5><?= htmlspecialchars($row['gd'] . ' ' . $row['nama_lengkap'] . ', ' . $row['gb']); ?></h5>
+						<p><?= htmlspecialchars($row['posisi']); ?></p>
 						</div>
+					</div>
 					<?php } ?>
-					</div>
-					<div class="section-title">
-						<a href="pembicara.php" class="btn btn-main-md">Selengkapnya..</a>
-					</div>
 				</div>
-			</section>
+				<div class="section-title">
+					<a href="pembicara.php" class="btn btn-main-md">Selengkapnya..</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -237,19 +258,19 @@
 								<tr>
 									<th class="text-center" style="width: 15%;">Jam</th>
 									<th class="text-center" style="width: 35%;">Kegiatan</th>
-									<th class="text-center" style="width: 35%;">Pembicara</th>
+									<th class="text-center col-speaker" style="width: 35%;">Pembicara</th>
 									<th class="text-center" style="width: 15%;">Lokasi</th>
 								</tr>
 							</thead>
 							<tbody>
-								<?php while ($row = mysqli_fetch_assoc($result_jadwal1)) { ?>
+							<?php while ($row = mysqli_fetch_assoc($result_jadwal1)) { ?>
 								<tr>
 									<td><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></td>
 									<td><?= htmlspecialchars($row['nama']); ?></td>
-									<td><?= htmlspecialchars($row['speaker']); ?></td>
+									<td class="col-speaker"><?= htmlspecialchars($row['speaker']); ?></td>
 									<td><?= htmlspecialchars($row['lokasi']); ?></td>
 								</tr>
-								<?php } ?>
+							<?php } ?>
 							</tbody>
 						</table>
 					  </div>
@@ -259,7 +280,7 @@
 								<tr>
 									<th class="text-center" style="width: 15%;">Jam</th>
 									<th class="text-center" style="width: 35%;">Kegiatan</th>
-									<th class="text-center" style="width: 35%;">Pembicara</th>
+									<th class="text-center col-speaker" style="width: 35%;">Pembicara</th>
 									<th class="text-center" style="width: 15%;">Lokasi</th>
 								</tr>
 							</thead>
@@ -268,7 +289,7 @@
 								<tr>
 									<td><?= htmlspecialchars(substr($row['jam_mulai'], 0, 5) . ' - ' . substr($row['jam_selesai'], 0, 5)); ?></td>
 									<td><?= htmlspecialchars($row['nama']); ?></td>
-									<td><?= htmlspecialchars($row['speaker']); ?></td>
+									<td class="col-speaker"><?= htmlspecialchars($row['speaker']); ?></td>
 									<td><?= htmlspecialchars($row['lokasi']); ?></td>
 								</tr>
 								<?php } ?>
@@ -285,7 +306,7 @@
 <!--====  End of Schedule  ====-->
 
 <!--==========================
-=            News            =
+=            Workshop          =
 ===========================-->
 <section class="news-hr section mb-0">
 	<div class="container">
@@ -332,7 +353,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="section-title">
-					<h3>Disponsori Oleh</span></h3>
+					<h3>Diselenggarakan oleh</span></h3>
 					<p>Kegiatan dapat diwujudkan atas inisiasi dan kerjasama InOA Wocare Bogor, Yayasan
 						Wocare Indonesia serta dukungan para Sponsor</p>
 				</div>
@@ -346,28 +367,7 @@
 						<li class="list-inline-item">
 							<div class="image-block text-center">
 								<a href="#">
-									<img src="images/logo/kota_bogor.png" alt="sponsors-logo" class="img-fluid">
-								</a>
-							</div>
-						</li>
-						<li class="list-inline-item">
-							<div class="image-block text-center">
-								<a href="#">
-									<img src="images/logo/sahabat_ostomate.png" alt="sponsors-logo" class="img-fluid">
-								</a>
-							</div>
-						</li>
-						<li class="list-inline-item">
-							<div class="image-block text-center">
-								<a href="#">
 									<img src="images/logo/inoa.png" alt="sponsors-logo" class="img-fluid">
-								</a>
-							</div>
-						</li>
-						<li class="list-inline-item">
-							<div class="image-block text-center">
-								<a href="#">
-									<img src="images/logo/wocare.png" alt="sponsors-logo" class="img-fluid">
 								</a>
 							</div>
 						</li>
@@ -378,11 +378,18 @@
 								</a>
 							</div>
 						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/sahabat_ostomate.png" alt="sponsors-logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
 					</ul>
 				</div>
-				<!-- Title -->
+				<!-- Didukung -->
 				<div class="sponsor-title text-center">
-					<h5>Supported by</h5>
+					<h5>Didukung oleh</h5>
 				</div>
 				<div class="block text-center">
 					<!-- Sponsors image list -->
@@ -390,42 +397,136 @@
 						<li class="list-inline-item">
 							<div class="image-block text-center">
 								<a href="#">
-									<img src="images/logo/inwcca.png" alt="sponsors-logo" class="img-fluid">
+									<img src="images/logo/pemkot.png" alt="pemkot_logo" class="img-fluid">
 								</a>
 							</div>
 						</li>
 						<li class="list-inline-item">
 							<div class="image-block text-center">
 								<a href="#">
-									<img src="images/logo/ostomy_nurses_association_of_the_philippines.png" alt="sponsors-logo" class="img-fluid">
+									<img src="images/logo/dinkes.png" alt="dinkes_logo" class="img-fluid">
 								</a>
 							</div>
 						</li>
 						<li class="list-inline-item">
 							<div class="image-block text-center">
 								<a href="#">
-									<img src="images/logo/oas_ostomy_association_of_singapore.jpg" alt="sponsors-logo" class="img-fluid">
+									<img src="images/logo/wocare.png" alt="wocare_logo" class="img-fluid">
 								</a>
 							</div>
 						</li>
 						<li class="list-inline-item">
 							<div class="image-block text-center">
 								<a href="#">
-									<img src="images/logo/mosa.jpg" alt="sponsors-logo" class="img-fluid">
+									<img src="images/logo/inwcca.png" alt="inwcca_logo" class="img-fluid">
 								</a>
 							</div>
 						</li>
 						<li class="list-inline-item">
 							<div class="image-block text-center">
 								<a href="#">
-									<img src="images/logo/friends of ostomates worldwide.jpg" alt="sponsors-logo" class="img-fluid">
+									<img src="images/logo/inpana.png" alt="inpana_logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/ostomy_philippines.png" alt="ostomyphilippines_logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/fow.png" alt="ostomateworldwide_logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/oas.png" alt="oas_logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/mosa.png" alt="mosa_logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/kreasi_center.png" alt="kreasicenter_logo" class="img-fluid">
 								</a>
 							</div>
 						</li>
 					</ul>
 				</div>
-				<div class="sponsor-btn text-center">
-					<a href="doc/Proposal-SCW-2025.pdf" class="btn btn-main-md">Become a sponsor</a>
+				<!-- Disponsori -->
+				<div class="sponsor-title text-center">
+					<h5>Di sponsori oleh</h5>
+				</div>
+				<div class="block text-center">
+					<!-- Sponsors image list -->
+					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/pbm.png" alt="pbm_logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/prodevice.png" alt="prodevice_logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/winner.png" alt="winner_logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Rumah Sakit Sahabat Ostomate -->
+				<div class="sponsor-title text-center">
+					<h5>Rumah Sakit Sahabat Ostomate</h5>
+				</div>
+				<div class="block text-center">
+					<!-- Sponsors image list -->
+					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/vania.png" alt="vania_logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Klinik / Praktik Mandiri Sahabat Ostomate -->
+				<div class="sponsor-title text-center">
+					<h5>Klinik / Praktik Mandiri Sahabat Ostomate</h5>
+				</div>
+				<div class="block text-center">
+					<!-- Sponsors image list -->
+					<ul class="list-inline sponsors-list">
+						<li class="list-inline-item">
+							<div class="image-block text-center">
+								<a href="#">
+									<img src="images/logo/griya_puspa.png" alt="griya_puspa_logo" class="img-fluid">
+								</a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
